@@ -1,0 +1,75 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "HumanMessage"
+      ],
+      "kwargs": {
+        "content": "What is the capital of France?",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "d2c4a6b4-4f45-4f77-aeee-c28c2e8b6b2f"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "id": "aa06a280-040b-42f9-b50a-cf24b682acfd",
+        "name": "model",
+        "content": "The capital of France is **Paris**.",
+        "additional_kwargs": {
+          "reasoning_content": "The user is asking a simple factual question about the capital of France. This is a single, straightforward informational request that doesn't require a todo list or complex planning. I'll answer directly."
+        },
+        "response_metadata": {
+          "tokenUsage": {
+            "promptTokens": 3041,
+            "completionTokens": 47,
+            "totalTokens": 3088
+          },
+          "finish_reason": "stop",
+          "model_provider": "deepseek",
+          "model_name": "deepseek-v4-flash",
+          "usage": {
+            "prompt_tokens": 3041,
+            "completion_tokens": 47,
+            "total_tokens": 3088,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 38
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 3041
+          },
+          "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402"
+        },
+        "type": "ai",
+        "tool_calls": [],
+        "invalid_tool_calls": [],
+        "usage_metadata": {
+          "output_tokens": 47,
+          "input_tokens": 3041,
+          "total_tokens": 3088,
+          "input_token_details": {
+            "cache_read": 0
+          },
+          "output_token_details": {
+            "reasoning": 38
+          }
+        }
+      }
+    }
+  ],
+  "todos": []
+}
