@@ -1,0 +1,108 @@
+{
+  "messages": [
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "HumanMessage"
+      ],
+      "kwargs": {
+        "content": "Hello, world!",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "db611c03-bd2b-4ab6-8ba6-bc4547460b18"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "content": [],
+        "invalid_tool_calls": [],
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "tool_calls": [
+          {
+            "name": "get_weather",
+            "args": {
+              "location": "San Francisco"
+            },
+            "id": "call_123"
+          }
+        ],
+        "id": "81422e3d-83a3-4d60-b608-36bf4566aebb"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "ToolMessage"
+      ],
+      "kwargs": {
+        "content": "Sunny, 72°F",
+        "tool_call_id": "call_123",
+        "additional_kwargs": {},
+        "response_metadata": {},
+        "id": "a5695902-79e8-455e-8a6a-34218da86910"
+      }
+    },
+    {
+      "lc": 1,
+      "type": "constructor",
+      "id": [
+        "langchain_core",
+        "messages",
+        "AIMessage"
+      ],
+      "kwargs": {
+        "id": "33b303ea-8a17-4978-ad9a-1ee288bb37cd",
+        "name": "agent",
+        "content": "Hello! It looks like you just greeted me with a classic \"Hello, world!\" — a perfect way to start.\n\nI'm doing well, and it's currently a sunny 72°F in San Francisco if you were curious. 😊\n\nHow can I help you today? Do you have a question, a project you're working on, or just want to chat?",
+        "additional_kwargs": {},
+        "response_metadata": {
+          "tokenUsage": {
+            "promptTokens": 72,
+            "completionTokens": 76,
+            "totalTokens": 148
+          },
+          "finish_reason": "stop",
+          "model_provider": "deepseek",
+          "model_name": "deepseek-v4-flash",
+          "usage": {
+            "prompt_tokens": 72,
+            "completion_tokens": 76,
+            "total_tokens": 148,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            },
+            "prompt_cache_hit_tokens": 0,
+            "prompt_cache_miss_tokens": 72
+          },
+          "system_fingerprint": "fp_8b330d02d0_prod0820_fp8_kvcache_20260402"
+        },
+        "type": "ai",
+        "tool_calls": [],
+        "invalid_tool_calls": [],
+        "usage_metadata": {
+          "output_tokens": 76,
+          "input_tokens": 72,
+          "total_tokens": 148,
+          "input_token_details": {
+            "cache_read": 0
+          },
+          "output_token_details": {}
+        }
+      }
+    }
+  ]
+}
